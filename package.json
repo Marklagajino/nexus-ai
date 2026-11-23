@@ -1,0 +1,28 @@
+{
+  "name": "nexus",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "NEXUS — a JARVIS-style personal AI with chat, voice, code and design modes.",
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "NODE_ENV=production node server/index.mjs"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
